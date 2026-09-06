@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Coccinella-Labs/config/main/.github/assets/thumbnail.png" alt="config" width="100%">
+</p>
+
 # gh-config
 
 GitHub CLI extension to get configuration values from emberlamp/config repository.

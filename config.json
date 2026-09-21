@@ -1,7 +1,7 @@
 {
   "warningsEnabled": true,
   "pinRepoEnabled": false,
-  "defaultOrg": "emberlamp",
+  "defaultOrg": "coccinella-labs",
   "features": {
     "autoPin": false,
     "autoLicense": true,

@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# gh config - Get configuration values from emberlamp/config
+# gh config - Get configuration values from coccinella-labs/config
 # Usage: gh config <key>
 
 set -e
 
-CONFIG_REPO="emberlamp/config"
+CONFIG_REPO="coccinella-labs/config"
 CONFIG_FILE="config.json"
 
 # Get config value
@@ -28,7 +28,7 @@ list_keys() {
 # Main
 case "$1" in
     --help|-h)
-        echo "gh config - Get configuration from emberlamp/config"
+        echo "gh config - Get configuration from coccinella-labs/config"
         echo ""
         echo "Usage:"
         echo "  gh config <key>        Get config value"

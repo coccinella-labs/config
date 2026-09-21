@@ -4,16 +4,16 @@
 
 # gh-config
 
-GitHub CLI extension to get configuration values from emberlamp/config repository.
+GitHub CLI extension to get configuration values from coccinella-labs/config repository.
 
 ## Purpose
 
-Centralized configuration management for all emberlamp CLI extensions.
+Centralized configuration management for all coccinella-labs CLI extensions.
 
 ## Installation
 
 ```bash
-gh extension install emberlamp/config
+gh extension install coccinella-labs/config
 ```
 
 ## Usage
@@ -30,13 +30,13 @@ gh config --list
 
 ## Configuration
 
-The config is stored in [emberlamp/config](https://github.com/emberlamp/config) repository.
+The config is stored in [coccinella-labs/config](https://github.com/coccinella-labs/config) repository.
 
 ```json
 {
   "warningsEnabled": true,
   "pinRepoEnabled": false,
-  "defaultOrg": "emberlamp",
+  "defaultOrg": "coccinella-labs",
   "features": {
     "autoPin": false,
     "autoLicense": true,

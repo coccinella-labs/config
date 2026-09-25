@@ -16,7 +16,11 @@ get_config() {
         # Fallback: try to get from raw URL
         raw=$(curl -s "https://raw.githubusercontent.com/$CONFIG_REPO/main/$CONFIG_FILE" 2>/dev/null)
     fi
-    echo "$raw" | grep -o "\"$key\":[^,}]*" | cut -d'"' -f3-
+    if command -v jq &> /dev/null; then
+        echo "$raw" | jq -r ".\"$key\" // empty"
+        return
+    fi
+    echo "$raw" | grep -o "\"$key\"[[:space:]]*:[[:space:]]*[^,}]*" | sed 's/^[^:]*:[[:space:]]*//; s/^"//; s/"$//'
 }
 
 # List all keys
